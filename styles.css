@@ -1,0 +1,34 @@
+/* styles.css */
+
+/* Style for the hero section */
+.hero {
+    width: 100%;
+    height: 60vh; /* You can adjust the height as needed */
+    background-image: url('profile.jpg'); /* Use the path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white; /* Adjust text color for better contrast on the image */
+}
+
+/* Styling for profile image if you prefer using <img> */
+.profile-pic {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Ensures the text stays on top of the image */
+}
+
+/* Additional styles for the header */
+header {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Other CSS styles remain unchanged */
