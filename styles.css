@@ -45,40 +45,23 @@ header {
 
 /* Other CSS styles remain unchanged */
 
-/* Styling for the about-section */
+/* General section styling */
 .about-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     padding: 20px;
 }
 
-/* Styling for the text part */
-.about-section .text {
-    flex: 1;
-    margin-right: 20px; /* Add some space between text and image */
-}
-
-/* Styling for the image */
-.about-section .image {
-    flex: 1;
-}
-
-.about-image {
-    width: 100%;
-    height: auto;
-    border-radius: 8px; /* Optional: Add rounded corners to the image */
-}
-
-/* Styles for navigation inside sections */
+/* Section navigation styling */
 .section-nav {
     display: flex;
-    justify-content: center; /* Centers links */
-    gap: 15px; /* Adds space between links */
-    margin-top: 20px; /* Adds spacing from the content above */
+    justify-content: center; /* Center the links */
+    gap: 15px; /* Space between links */
+    margin-bottom: 20px; /* Adds spacing below the links */
 }
 
-/* Style for the links */
+/* Style for the navigation links */
 .section-nav a {
     text-decoration: none;
     font-weight: 500;
@@ -92,4 +75,47 @@ header {
 .section-nav a:hover {
     background-color: #007bff;
     color: white;
+}
+
+/* Flexbox to align text and image side by side */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 900px; /* Adjust for better readability */
+}
+
+/* Styling for text */
+.text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Styling for the image */
+.image {
+    flex: 1;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .section-nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    
+    .text {
+        margin-right: 0;
+    }
 }
