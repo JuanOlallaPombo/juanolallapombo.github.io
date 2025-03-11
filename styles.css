@@ -15,7 +15,7 @@ p {
 /* Style for the hero section */
 .hero {
     width: 100%;
-    height: 60vh; /* You can adjust the height as needed */
+    height: 30vh; /* You can adjust the height as needed */
     background-image: url('profile.jpg'); /* Use the path to your image */
     background-size: cover;
     background-position: center;
