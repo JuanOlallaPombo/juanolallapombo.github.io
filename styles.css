@@ -44,3 +44,28 @@ header {
 }
 
 /* Other CSS styles remain unchanged */
+
+/* Styling for the about-section */
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling for the text part */
+.about-section .text {
+    flex: 1;
+    margin-right: 20px; /* Add some space between text and image */
+}
+
+/* Styling for the image */
+.about-section .image {
+    flex: 1;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: Add rounded corners to the image */
+}
